@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.Android.Support.v7.MediaRouter</id>
+    <version>20.0.0.1</version>
+    <title>Xamarin Support Library v7 MediaRouter</title>
+    <authors>Xamarin Inc.</authors>
+    <owners>Xamarin Inc.</owners>
+    <licenseUrl>http://components.xamarin.com/license/googleplayservices</licenseUrl>
+    <projectUrl>http://components.xamarin.com/view/googleplayservices</projectUrl>
+    <iconUrl>https://xamarin-component-icons.s3.amazonaws.com/Xamarin.Android.Support.v7.MediaRouter.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# bindings for android support library v7 media router.</description>
+    <copyright>Copyright 2013-2014</copyright>
+    <dependencies>
+      <dependency id="Xamarin.Android.Support.v7.AppCompat" version="20.0.0.2" />
+    </dependencies>
+  </metadata>
+</package>

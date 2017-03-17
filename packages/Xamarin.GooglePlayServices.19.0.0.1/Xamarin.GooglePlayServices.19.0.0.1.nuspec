@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.GooglePlayServices</id>
+    <version>19.0.0.1</version>
+    <title>Xamarin Google Play Services Binding</title>
+    <authors>Xamarin Inc.</authors>
+    <owners>Xamarin Inc.</owners>
+    <licenseUrl>http://components.xamarin.com/license/googleplayservices</licenseUrl>
+    <projectUrl>http://components.xamarin.com/view/googleplayservices</projectUrl>
+    <iconUrl>https://xamarin-component-icons.s3.amazonaws.com/Xamarin.GooglePlayServicesKitKat.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# bindings for google play services.</description>
+    <copyright>Copyright 2013-2014</copyright>
+    <dependencies>
+      <group targetFramework="MonoAndroid2.3">
+        <dependency id="Xamarin.Android.Support.v4" version="20.0.0.4" />
+        <dependency id="Xamarin.Android.Support.v7.MediaRouter" version="20.0.0" />
+        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="20.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

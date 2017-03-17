@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="City - State"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+spotsList/txtTitle" />
+    <TextView
+        android:text="Brief of the note.."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@spotsList/txtTitle"
+        android:id="@+spotsList/txtNote" />
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:text="zoom in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+spotsList/btnZoomIn" />
+        <Button
+            android:text="edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@spotsList/btnZoomIn"
+            android:id="@+spotsList/btnEdit" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="pt" original="AppResources.resx" tool-id="MultilingualAppToolkit" product-name="MyHitchhikingSpots.WP8" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1085.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</note>
+          </trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">pt</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note>
+          </trans-unit>
+        <trans-unit id="Resx/ApplicationTitle" translate="yes" xml:space="preserve">
+          <source>MY HITCHHIKING SPOTS</source>
+          <target state="new">MY HITCHHIKING SPOTS</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppBarButtonText" translate="yes" xml:space="preserve">
+          <source>add</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Adicionar</target>
+        </trans-unit>
+        <trans-unit id="Resx/AttemptResultGotARideOption" translate="yes" xml:space="preserve">
+          <source>Got a ride</source>
+          <target state="new">Got a ride</target>
+        </trans-unit>
+        <trans-unit id="Resx/AttemptResultGaveUpOption" translate="yes" xml:space="preserve">
+          <source>Gave up</source>
+          <target state="new">Gave up</target>
+        </trans-unit>
+        <trans-unit id="Resx/CopyMapRouteButtonText" translate="yes" xml:space="preserve">
+          <source>copy url</source>
+          <target state="needs-review-translation">copiar url</target><note from="MultilingualUpdate" priority="2" annotates="source">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+        </trans-unit>
+        <trans-unit id="Resx/CurrentLocationMapBalloonTitle" translate="yes" xml:space="preserve">
+          <source>Current location</source>
+          <target state="translated">Posicionamento atual</target>
+        </trans-unit>
+        <trans-unit id="Resx/DeleteSpotConfirmationMessage" translate="yes" xml:space="preserve">
+          <source>Are you sure you want to delete this spot?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tem certeza de que deseja excluir este local?</target>
+        </trans-unit>
+        <trans-unit id="Resx/DeleteSpotConfirmationTitle" translate="yes" xml:space="preserve">
+          <source>WARNING</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">AVISO</target>
+        </trans-unit>
+        <trans-unit id="Resx/DeleteSpotSucceededMessage" translate="yes" xml:space="preserve">
+          <source>Spot successfully deleted.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ponto excluído com êxito.</target>
+        </trans-unit>
+        <trans-unit id="Resx/GetSpotNameFaultedMessage" translate="yes" xml:space="preserve">
+          <source>Sorry, something went wrong.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Algo deu errado.</target>
+        </trans-unit>
+        <trans-unit id="Resx/GetSpotNameRedoConfirmation" translate="yes" xml:space="preserve">
+          <source>This location seems to be already reverse-geocoded, do you really want it to be done again? Push "Ok" to continue.</source>
+          <target state="translated">O reverse geocode para este local já obteve o nome desta cidade, deseja refazer a consulta? Selecione "Ok" para continuar.</target>
+        </trans-unit>
+        <trans-unit id="Resx/GetSpotNameSucceededMessage" translate="yes" xml:space="preserve">
+          <source>City: {0}
+Country: {1}</source>
+          <target state="needs-review-translation">Cidade: {0}
+País: {1}</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="Resx/GotARideButtonText" translate="yes" xml:space="preserve">
+          <source>got a ride</source>
+          <target state="translated">peguei carona</target>
+        </trans-unit>
+        <trans-unit id="Resx/HitchabilityVeryGoodOption" translate="yes" xml:space="preserve">
+          <source>Very Good</source>
+          <target state="new">Very Good</target>
+        </trans-unit>
+        <trans-unit id="Resx/HitchabilitySenselessOption" translate="yes" xml:space="preserve">
+          <source>Senseless</source>
+          <target state="new">Senseless</target>
+        </trans-unit>
+        <trans-unit id="Resx/HitchabilityNoAnswerOption" translate="yes" xml:space="preserve">
+          <source>N/A</source>
+          <target state="new">N/A</target>
+        </trans-unit>
+        <trans-unit id="Resx/HitchabilityGoodOption" translate="yes" xml:space="preserve">
+          <source>Good</source>
+          <target state="new">Good</target>
+        </trans-unit>
+        <trans-unit id="Resx/HitchabilityBadOption" translate="yes" xml:space="preserve">
+          <source>Bad</source>
+          <target state="new">Bad</target>
+        </trans-unit>
+        <trans-unit id="Resx/HitchabilityAverageOption" translate="yes" xml:space="preserve">
+          <source>Average</source>
+          <target state="new">Average</target>
+        </trans-unit>
+        <trans-unit id="Resx/ListTabTitle" translate="yes" xml:space="preserve">
+          <source>list</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">lista</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapEditFormCreateSucceededMessage" translate="yes" xml:space="preserve">
+          <source>Map created successfuly!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mapa criado com êxito!</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapEditFormNameText" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nome</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapEditFormSaveButtonText" translate="yes" xml:space="preserve">
+          <source>save</source>
+          <target state="translated">salvar</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapEditFormSaveFaultedMessage" translate="yes" xml:space="preserve">
+          <source>Sorry, something went wrong.
+Your map might not had been created/updated.</source>
+          <target state="translated">Algo deu errado.
+Talvez seu mapa não tenha sido criado/atualizado com sucesso.</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapEditFormUpdateSucceededMessage" translate="yes" xml:space="preserve">
+          <source>Map updated successfuly!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mapa atualizado com êxito!</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditAttemptResultMandatoryText" translate="yes" xml:space="preserve">
+          <source>You must select an Attempt Result.</source>
+          <target state="translated">Você deve selecionar um Resultado da Tentativa.</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditCreateViewTitle" translate="yes" xml:space="preserve">
+          <source>new spot</source>
+          <target state="translated">novo local</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditEvaluateSaveSucceededText" translate="yes" xml:space="preserve">
+          <source>Evaluation saved successfully!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Avaliação salva com êxito!</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditEvaluateViewTitle" translate="yes" xml:space="preserve">
+          <source>evaluate spot</source>
+          <target state="translated">Avaliar local</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormAttemptResultText" translate="yes" xml:space="preserve">
+          <source>Attempt Result</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Resultado da tentativa</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormDateText" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Data</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormDeleteButtonText" translate="yes" xml:space="preserve">
+          <source>delete</source>
+          <target state="translated">deletar</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormGetSpotNameButtonText" translate="yes" xml:space="preserve">
+          <source>get more info</source>
+          <target state="needs-review-translation">Obter informação</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="Resx/MapItemEditFormHitchabilityText" translate="yes" xml:space="preserve">
+          <source>Hitchability</source>
+          <target state="translated">Facilidade pra se conseguir carona</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormMapText" translate="yes" xml:space="preserve">
+          <source>Map</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mapa</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormNoteText" translate="yes" xml:space="preserve">
+          <source>Note</source>
+          <target state="translated">Nota</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormSaveButtonText" translate="yes" xml:space="preserve">
+          <source>save</source>
+          <target state="translated">salvar</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormTimeText" translate="yes" xml:space="preserve">
+          <source>Time</source>
+          <target state="translated">Hora</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormWaitingTimeText" translate="yes" xml:space="preserve">
+          <source>Waiting time</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tempo de espera</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditFormWaitingTimeUnitText" translate="yes" xml:space="preserve">
+          <source>in minutes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">em minutos</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditHitchabilityMandatoryText" translate="yes" xml:space="preserve">
+          <source>You must select one of the options for Hitchability.</source>
+          <target state="translated">Você deve selecionar uma opção para a Facilidade de se conseguir carona neste local.</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditInvalidWaitingTimeText" translate="yes" xml:space="preserve">
+          <source>Waiting Time must be a number.</source>
+          <target state="translated">O tempo de espera deve ser um número.</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditUpdateSucceededText" translate="yes" xml:space="preserve">
+          <source>Update saved successfully!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Atualização salva com êxito!</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapItemEditUpdateViewTitle" translate="yes" xml:space="preserve">
+          <source>edit spot</source>
+          <target state="translated">editar local</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapsViewCreateNewButtonText" translate="yes" xml:space="preserve">
+          <source>create new</source>
+          <target state="translated">criar novo</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapsViewTitle" translate="yes" xml:space="preserve">
+          <source>maps</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">mapas</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapsViewUnselectMapButtonText" translate="yes" xml:space="preserve">
+          <source>unselect map</source>
+          <target state="translated">Deselecionar mapa</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapTabTitle" translate="yes" xml:space="preserve">
+          <source>map</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">mapa</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapViewTitle" translate="yes" xml:space="preserve">
+          <source>map</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">mapa</target>
+        </trans-unit>
+        <trans-unit id="Resx/RecordButtonText" translate="yes" xml:space="preserve">
+          <source>record</source>
+          <target state="translated">salvar local atual</target>
+        </trans-unit>
+        <trans-unit id="Resx/RouteMapUrlCopiedMessage" translate="yes" xml:space="preserve">
+          <source>Url copied to clipboard.</source>
+          <target state="translated">URL copiado para a área de transferência. 
+Cole-a para compartilhar com seus amigos.</target>
+        </trans-unit>
+        <trans-unit id="Resx/SpotsViewTitle" translate="yes" xml:space="preserve">
+          <source>spots</source>
+          <target state="translated">locais</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapNotWorkingDialogTitle" translate="yes" xml:space="preserve">
+          <source>Offline mode</source>
+          <target state="new">Offline mode</target>
+        </trans-unit>
+        <trans-unit id="Resx/ViewOnMapButtonText" translate="yes" xml:space="preserve">
+          <source>show on map</source>
+          <target state="new">show on map</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExportDataButtonText" translate="yes" xml:space="preserve">
+          <source>export data</source>
+          <target state="new">export data</target>
+        </trans-unit>
+        <trans-unit id="Resx/MapNotWorkingDialogMessage" translate="yes" xml:space="preserve">
+          <source>Looks like you don\'t have an internet connection right now or for some other reason your map may not load.
+Don\'t worry! You can keep using the app normally because thanks to your GPS we still know exactly where you are and therefore you can normally save your current location as a spot and check it later! ;)</source>
+          <target state="new">Looks like you don\'t have an internet connection right now or for some other reason your map may not load.
+Don\'t worry! You can keep using the app normally because thanks to your GPS we still know exactly where you are and therefore you can normally save your current location as a spot and check it later! ;)</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

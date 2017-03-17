@@ -1,0 +1,1 @@
+<resources><integer name="jobImage_width">100</integer><integer name="jobImage_height">100</integer><dimen name="jobImageContainer_width">110dp</dimen><dimen name="jobImageContainer_height">110dp</dimen></resources>

@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>pt</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="CopyMapRouteButtonText" xml:space="preserve">
+    <value>copiar url</value>
+    <comment></comment>
+  </data>
+  <data name="CurrentLocationMapBalloonTitle" xml:space="preserve">
+    <value>Posicionamento atual</value>
+  </data>
+  <data name="DeleteSpotConfirmationMessage" xml:space="preserve">
+    <value>Tem certeza de que deseja excluir este local?</value>
+  </data>
+  <data name="DeleteSpotConfirmationTitle" xml:space="preserve">
+    <value>AVISO</value>
+  </data>
+  <data name="DeleteSpotSucceededMessage" xml:space="preserve">
+    <value>Ponto excluído com êxito.</value>
+  </data>
+  <data name="GetSpotNameFaultedMessage" xml:space="preserve">
+    <value>Algo deu errado.</value>
+  </data>
+  <data name="GetSpotNameRedoConfirmation" xml:space="preserve">
+    <value>O reverse geocode para este local já obteve o nome desta cidade, deseja refazer a consulta? Selecione "Ok" para continuar.</value>
+  </data>
+  <data name="GetSpotNameSucceededMessage" xml:space="preserve">
+    <value>Cidade: {0}
+País: {1}</value>
+    <comment></comment>
+  </data>
+  <data name="GotARideButtonText" xml:space="preserve">
+    <value>peguei carona</value>
+  </data>
+  <data name="ListTabTitle" xml:space="preserve">
+    <value>lista</value>
+  </data>
+  <data name="MapEditFormCreateSucceededMessage" xml:space="preserve">
+    <value>Mapa criado com êxito!</value>
+  </data>
+  <data name="MapEditFormNameText" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="MapEditFormSaveButtonText" xml:space="preserve">
+    <value>salvar</value>
+  </data>
+  <data name="MapEditFormSaveFaultedMessage" xml:space="preserve">
+    <value>Algo deu errado.
+Talvez seu mapa não tenha sido criado/atualizado com sucesso.</value>
+  </data>
+  <data name="MapEditFormUpdateSucceededMessage" xml:space="preserve">
+    <value>Mapa atualizado com êxito!</value>
+  </data>
+  <data name="MapItemEditAttemptResultMandatoryText" xml:space="preserve">
+    <value>Você deve selecionar um Resultado da Tentativa.</value>
+  </data>
+  <data name="MapItemEditCreateViewTitle" xml:space="preserve">
+    <value>novo local</value>
+  </data>
+  <data name="MapItemEditEvaluateSaveSucceededText" xml:space="preserve">
+    <value>Avaliação salva com êxito!</value>
+  </data>
+  <data name="MapItemEditEvaluateViewTitle" xml:space="preserve">
+    <value>Avaliar local</value>
+  </data>
+  <data name="MapItemEditFormAttemptResultText" xml:space="preserve">
+    <value>Resultado da tentativa</value>
+  </data>
+  <data name="MapItemEditFormDateText" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="MapItemEditFormDeleteButtonText" xml:space="preserve">
+    <value>deletar</value>
+  </data>
+  <data name="MapItemEditFormGetSpotNameButtonText" xml:space="preserve">
+    <value>Obter informação</value>
+    <comment></comment>
+  </data>
+  <data name="MapItemEditFormHitchabilityText" xml:space="preserve">
+    <value>Facilidade pra se conseguir carona</value>
+  </data>
+  <data name="MapItemEditFormMapText" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="MapItemEditFormNoteText" xml:space="preserve">
+    <value>Nota</value>
+  </data>
+  <data name="MapItemEditFormSaveButtonText" xml:space="preserve">
+    <value>salvar</value>
+  </data>
+  <data name="MapItemEditFormTimeText" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="MapItemEditFormWaitingTimeText" xml:space="preserve">
+    <value>Tempo de espera</value>
+  </data>
+  <data name="MapItemEditFormWaitingTimeUnitText" xml:space="preserve">
+    <value>em minutos</value>
+  </data>
+  <data name="MapItemEditHitchabilityMandatoryText" xml:space="preserve">
+    <value>Você deve selecionar uma opção para a Facilidade de se conseguir carona neste local.</value>
+  </data>
+  <data name="MapItemEditInvalidWaitingTimeText" xml:space="preserve">
+    <value>O tempo de espera deve ser um número.</value>
+  </data>
+  <data name="MapItemEditUpdateSucceededText" xml:space="preserve">
+    <value>Atualização salva com êxito!</value>
+  </data>
+  <data name="MapItemEditUpdateViewTitle" xml:space="preserve">
+    <value>editar local</value>
+  </data>
+  <data name="MapsViewCreateNewButtonText" xml:space="preserve">
+    <value>criar novo</value>
+  </data>
+  <data name="MapsViewTitle" xml:space="preserve">
+    <value>mapas</value>
+  </data>
+  <data name="MapsViewUnselectMapButtonText" xml:space="preserve">
+    <value>Deselecionar mapa</value>
+  </data>
+  <data name="MapTabTitle" xml:space="preserve">
+    <value>mapa</value>
+  </data>
+  <data name="MapViewTitle" xml:space="preserve">
+    <value>mapa</value>
+  </data>
+  <data name="RecordButtonText" xml:space="preserve">
+    <value>salvar local atual</value>
+  </data>
+  <data name="RouteMapUrlCopiedMessage" xml:space="preserve">
+    <value>URL copiado para a área de transferência. 
+Cole-a para compartilhar com seus amigos.</value>
+  </data>
+  <data name="SpotsViewTitle" xml:space="preserve">
+    <value>locais</value>
+  </data>
+</root>

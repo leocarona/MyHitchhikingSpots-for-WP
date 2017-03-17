@@ -1,0 +1,140 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MyHitchhikingSpots.Views.MapItemEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="ItemTemplate">
+            <TextBlock Text="{Binding Item2}" />
+        </DataTemplate>
+        <DataTemplate x:Key="FullModeItemTemplate">
+            <TextBlock Text="{Binding Item2}" FontSize="40" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="MapsItemTemplate">
+            <TextBlock Text="{Binding Name}" />
+        </DataTemplate>
+        <DataTemplate x:Key="MapsFullModeItemTemplate">
+            <TextBlock Text="{Binding Name}" FontSize="40" />
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Foreground="Black" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock x:Name="txtTitle" Foreground="Pink" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="txtLocation" HorizontalAlignment="Right" />
+        </StackPanel>
+        <ProgressBar Grid.Row="1" IsIndeterminate="{Binding IsBusy}" Margin="0 3" />
+        <!--ContentPanel - place additional content here-->
+        <ScrollViewer Grid.Row="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="63" />
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel x:Name="stpBasicForm" Visibility="Collapsed">
+                    <!-- Note is not meant to be entirely the hitchwiki Description. It can be used to add personal notes but of course some description may also go here -->
+                    <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormNoteText, Source={StaticResource LocalizedStrings}}" />
+                    <TextBox x:Name="txtNote" TextWrapping="Wrap"
+                              VerticalScrollBarVisibility="Visible"
+                             BorderBrush="Pink" AcceptsReturn="True" />
+
+                    <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormHitchabilityText, Source={StaticResource LocalizedStrings}}" />
+                    <toolkit:ListPicker x:Name="lstHitchability"
+                                FullModeItemTemplate="{StaticResource FullModeItemTemplate}"
+                                ItemTemplate="{StaticResource ItemTemplate}" 
+                                ItemsSource="{Binding HitchabilityOptions}" 
+                                BorderBrush="Pink" Foreground="Black" />
+
+                    <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormDateText, Source={StaticResource LocalizedStrings}}" Foreground="Gray" />
+                    <toolkit:DatePicker x:Name="dtpDate" Foreground="Gray" BorderBrush="Pink" />
+
+                    <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormTimeText, Source={StaticResource LocalizedStrings}}" Foreground="Gray" />
+                    <toolkit:TimePicker x:Name="tmpTime" Foreground="Gray" BorderBrush="Pink" />
+                </StackPanel>
+
+                <StackPanel x:Name="stpEvaluationForm" Visibility="Collapsed" Margin="12,0,12,0" Grid.Row="1" Grid.RowSpan="2">
+
+                    <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormWaitingTimeText, Source={StaticResource LocalizedStrings}}" />
+                    <StackPanel Margin="10 0 0 0" x:Name="WaitingTimeTextBox" >
+                        <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormWaitingTimeUnitText, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" />
+                        <TextBox MaxLength="4" BorderBrush="Pink" 
+                                 InputScope="Number" x:Name="txtWaitingTime" />
+                    </StackPanel>
+                    <!--<toolkit:ListPicker x:Name="WaitingTimeListPicker"
+                                FullModeItemTemplate="{StaticResource FullModeItemTemplate}"
+                                ItemTemplate="{StaticResource ItemTemplate}" 
+                                ItemsSource="{Binding WaitingTimeDefaultOptions}" 
+                                BorderBrush="Pink" Foreground="Black" />-->
+
+
+
+
+                    <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormAttemptResultText, Source={StaticResource LocalizedStrings}}" />
+                    <toolkit:ListPicker x:Name="lstAttemptResult"
+                                FullModeItemTemplate="{StaticResource FullModeItemTemplate}"
+                                ItemTemplate="{StaticResource ItemTemplate}" 
+                                ItemsSource="{Binding AttemptResultOptions}" 
+                                BorderBrush="Pink" Foreground="Black" />
+
+                    <TextBlock Text="{Binding Path=LocalizedResources.MapItemEditFormMapText, Source={StaticResource LocalizedStrings}}" Visibility="Collapsed" />
+                    <toolkit:ListPicker x:Name="lstMaps" Visibility="Collapsed"
+                                FullModeItemTemplate="{StaticResource MapsFullModeItemTemplate}"
+                                ItemTemplate="{StaticResource MapsItemTemplate}" 
+                                ItemsSource="{Binding Maps}" 
+                                BorderBrush="Pink" Foreground="Black" />
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+        
+    </Grid>
+
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar Opacity="1" IsMenuEnabled="False">
+
+            <shell:ApplicationBarIconButton 
+                IconUri="/Assets/AppBar/save.png"
+                Text="save"
+                Click="Save_Click"
+             />
+
+            <shell:ApplicationBarIconButton 
+                IconUri="/Assets/AppBar/delete.png"
+                Text="delete"
+                Click="Delete_Click"
+             />
+
+            <shell:ApplicationBarIconButton 
+                IconUri="/Assets/AppBar/download.png"
+                Text="reverse geocode"
+                Click="ReverseGeocode_Click"
+             />
+
+        </shell:ApplicationBar>
+
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+
+</phone:PhoneApplicationPage>

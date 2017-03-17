@@ -1,0 +1,6 @@
+<resources><!--This is the google maps key generated, you will need to obatain your own key if the maps doesn't show up
+  in the app. Directions for doing so can be found here. 
+  http://docs.xamarin.com/Android/Guides/Platform_Features/Maps_and_Location/Obtaining_a_Google_Maps_API_Key--><!--Leo Debug  AIzaSyAh6D053TRAWTV7FIv_BL4YUGSNzC1-zgI--><!--Leo Notebook Debug AIzaSyDtiLhuRfZQLFhCXVZyoeooQzFcZWNopPM--><!--Leo release AIzaSyB3wj_ew-zjYreCS3Awu_m8LWucn1ZX0jQ--><string name="GoogleMapsAPIKey">AIzaSyB3wj_ew-zjYreCS3Awu_m8LWucn1ZX0jQ</string><string name="GoogleMapsKeyIssue">
+    This is the google maps key generated from the debug.keystore, you will need to obatain
+    your own key if the map tiles are not visible or if you are planning to deploy to the google play store. Directions can be found in the readme file.
+  </string></resources>

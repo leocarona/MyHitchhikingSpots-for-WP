@@ -1,0 +1,14 @@
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/MyHitchhikingSpots.Android.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/Mono.Android.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/Mono.Android.Export.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/mscorlib.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/System.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/System.Runtime.Serialization.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/System.Xml.Linq.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/System.Xml.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/Xamarin.Insights.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/GooglePlayServicesLib.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/Xamarin.Android.Support.v4.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/Xamarin.Mobile.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/System.Core.dll
+/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/assemblies/System.ServiceModel.Internals.dll

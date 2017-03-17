@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xamstore-xamarin.mobile.0.7.1\build\monoandroid\xamstore-xamarin.mobile.props" Condition="Exists('..\packages\xamstore-xamarin.mobile.0.7.1\build\monoandroid\xamstore-xamarin.mobile.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BB63F25-2958-4C76-8C81-0FFCC848B94B}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHitchhikingSpots</RootNamespace>
+    <AssemblyName>MyHitchhikingSpots.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+    <JavaMaximumHeapSize>512m</JavaMaximumHeapSize>
+    <MonoDroidExtraArgs>
+    </MonoDroidExtraArgs>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkSkip>
+    </AndroidLinkSkip>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <MandroidI18n>
+    </MandroidI18n>
+    <JavaMaximumHeapSize>512m</JavaMaximumHeapSize>
+    <JavaOptions>
+    </JavaOptions>
+    <MonoDroidExtraArgs>
+    </MonoDroidExtraArgs>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\packages\Xamarin.Insights.1.7.3.98\lib\MonoAndroid10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.19.0.0.1\lib\MonoAndroid23\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>References\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>References\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Databases\LocationsDB.cs">
+      <Link>Database\LocationsDB.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Databases\PrivateDB.cs">
+      <Link>Database\PrivateDB.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Interfaces\IBaseDb.cs">
+      <Link>Interfaces\IBaseDb.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Interfaces\ILocateService.cs">
+      <Link>Interfaces\ILocateService.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Interfaces\IMapService.cs">
+      <Link>Interfaces\IMapService.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Models\LocationHolder.cs">
+      <Link>Models\LocationHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Models\LogEntry.cs">
+      <Link>Models\LogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Models\Map.cs">
+      <Link>Models\Map.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Models\MapItem.cs">
+      <Link>Models\MapItem.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Models\Preference.cs">
+      <Link>Models\Preference.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Services\MapService.cs">
+      <Link>Services\MapService.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Tools\Constants.cs">
+      <Link>Tools\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Tools\GeoCoder.cs">
+      <Link>Tools\GeoCoder.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Tools\IMapItem.cs">
+      <Link>Tools\IMapItem.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Tools\ServiceContainer.cs">
+      <Link>Tools\ServiceContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Tools\SharedTools.cs">
+      <Link>Tools\SharedTools.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Tools\SQLite.cs">
+      <Link>Tools\SQLite.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\Tools\SQLiteAsync.cs">
+      <Link>Utilities\SQLiteAsync.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\ViewModels\BaseDB.cs">
+      <Link>ViewModels\BaseDB.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\ViewModels\Enums.cs">
+      <Link>ViewModels\Enums.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\ViewModels\LocationViewModel.cs">
+      <Link>ViewModels\LocationViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\ViewModels\MapViewModel.cs">
+      <Link>ViewModels\MapViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\ViewModels\PropertyChangedBase.cs">
+      <Link>ViewModels\PropertyChangedBase.cs</Link>
+    </Compile>
+    <Compile Include="..\MyHitchhikingSpots.WP8\ViewModels\ViewModelBase.cs">
+      <Link>ViewModels\ViewModelBase.cs</Link>
+    </Compile>
+    <Compile Include="Views\Class1.cs" />
+    <Compile Include="Dialog\BaseDialog.cs" />
+    <Compile Include="Utilities\Tool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\MapViewModel_Partial.cs" />
+    <Compile Include="Views\MainView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\MapTabFragment.cs" />
+    <Compile Include="Views\SpotEditActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\digital.otf" />
+    <AndroidAsset Include="Assets\Fonts\digital-7.ttf" />
+    <None Include="Resources\layout\Main.axml" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\MapTab.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\BasicDemo.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MapOverlayLayout.axml" />
+    <AndroidResource Include="Resources\layout\MainActivity.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\spotsList_ListItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SpotEdit.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MapInfoWindow.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\drawable\ButtonBlack.xml" />
+    <AndroidResource Include="Resources\drawable\ButtonYellow.xml" />
+    <AndroidResource Include="Resources\drawable\ButtonGreen.xml" />
+    <AndroidResource Include="Resources\drawable\ButtonRed.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ButtonBlue.xml" />
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-hdpi\SummaryRecord.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\SummaryRecord.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\SummaryRecord.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\TimerPause.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\TimerRecord.png" />
+    <AndroidResource Include="Resources\Drawable\timer_selector.xml" />
+    <AndroidResource Include="Resources\Drawable\MiniviewBackground.xml" />
+    <AndroidResource Include="Resources\Drawable\beaconbg.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\Drawable\shadow.xml" />
+    <AndroidResource Include="Resources\values-land\dimens.xml" />
+    <AndroidResource Include="Resources\values-large\dimens.xml" />
+    <AndroidResource Include="Resources\values-large-land\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge-land\dimens.xml" />
+    <AndroidResource Include="Resources\menu\MainView.xml" />
+    <AndroidResource Include="Resources\Drawable\calendar_1.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\Drawable\ControlBackground.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ItemPopupDivider.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ItemPopupDivider.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ItemPopupDivider.png" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\Drawable\backgroundSuggestion1.jpg" />
+    <AndroidResource Include="Resources\Drawable\TaskPaused.png" />
+    <AndroidResource Include="Resources\Drawable\TaskRunning.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_full_screen.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_full_screen.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_full_screen.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_full_screen.png" />
+    <AndroidResource Include="Resources\Drawable\ControlBackgroundWithHeader.xml" />
+    <AndroidResource Include="Resources\Drawable-mdpi\TimerRecord.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\TimerPause.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\TimerRecord.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\TimerPause.png" />
+    <AndroidResource Include="Resources\Drawable\telephone2.png" />
+    <AndroidResource Include="Resources\Drawable\clock.png" />
+    <AndroidResource Include="Resources\Drawable\businessman.png" />
+    <AndroidResource Include="Resources\Drawable\house.png" />
+    <AndroidResource Include="Resources\Drawable\information.png" />
+    <AndroidResource Include="Resources\Drawable\get_directions_button.xml" />
+    <AndroidResource Include="Resources\Drawable\mapOverlay.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\MapOverlayDivider.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\MapOverlayDivider.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\MapOverlayDivider.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\MapIcon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\MapOverlayDirections.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\MapOverlayDirectionsDown.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\MapOverlayIcon.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\MapOverlayIconDown.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\MapIcon.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\MapOverlayDirections.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\MapOverlayDirectionsDown.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\MapOverlayIcon.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\MapOverlayIconDown.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\MapIcon.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\MapOverlayDirections.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\MapOverlayDirectionsDown.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\MapOverlayIcon.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\MapOverlayIconDown.png" />
+    <AndroidResource Include="Resources\Drawable\Gradient_Background.xml" />
+    <AndroidResource Include="Resources\Drawable\collapsed.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_new_picture.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_new_picture.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_new_picture.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_new_picture.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\Drawable\navigate_minus.png" />
+    <AndroidResource Include="Resources\Drawable\navigate_plus.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_picture.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\ic_action_picture.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\ic_action_picture.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\ic_action_picture.png" />
+    <AndroidResource Include="Resources\values\sizes.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\check.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\check.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\check.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\check.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\checks.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\checks.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\checks.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\checks.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\cancel.png" />
+    <AndroidResource Include="Resources\Drawable-mdpi\cancel.png" />
+    <AndroidResource Include="Resources\Drawable-xhdpi\cancel.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cancel.png" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Values-pt\AppResources.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\AppResources.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\myhitchhikingspots_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\chart_gantt.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\xamstore-xamarin.mobile.0.7.1\build\monoandroid\xamstore-xamarin.mobile.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xamstore-xamarin.mobile.0.7.1\build\monoandroid\xamstore-xamarin.mobile.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

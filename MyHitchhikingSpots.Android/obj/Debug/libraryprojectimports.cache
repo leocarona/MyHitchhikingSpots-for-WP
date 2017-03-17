@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/__library_projects__/Xamarin.Insights/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/__library_projects__/Xamarin.Mobile/library_project_imports/res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/__library_projects__/Xamarin.Insights/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/__library_projects__/Xamarin.Mobile/library_project_imports/assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/__library_projects__/Xamarin.Insights.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/leoboaventura/Dropbox/MyHitchhikingSpots/MyHitchhikingSpots.Android/obj/Debug/__library_projects__/Xamarin.Mobile.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

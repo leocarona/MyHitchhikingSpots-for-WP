@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="myhitchhikingspots.android" android:versionCode="1" android:versionName="0.1.1" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="11" />
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="myhitchhikingspots.android.permission.MAPS_RECEIVE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <permission android:name="myhitchhikingspots.android.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <application android:theme="@android:style/Theme.Holo.Light" android:label="(x)MyHitchhikingSpots" android:icon="@drawable/myhitchhikingspots_icon" android:debuggable="true" android:name="mono.android.app.Application" android:allowBackup="true">
+    <!-- Put your Google Maps V2 API Key here. -->
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/GoogleMapsAPIKey" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:icon="@drawable/icon" android:label="DELETE" android:name="md510524930be49d3a4f80be9cab5142231.MainActivity" />
+    <activity android:label="My Hitchhiking Spots" android:name="md510524930be49d3a4f80be9cab5142231.MainView">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="map" android:name="md510524930be49d3a4f80be9cab5142231.MapTabFragment" />
+    <activity android:label="Spot" android:noHistory="true" android:name="md546d2b33f9a57d8a094bef67b2d4ad811.SpotEditActivity" />
+    <activity android:name="md50575d4ab16fc336ade1879255cf984b5.MediaPickerActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="myhitchhikingspots.android.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.myhitchhikingspots.android" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
+  <!-- Google Maps for Android v2 requires OpenGL ES v2 -->
+  <!-- We need to be able to download map tiles and access Google Play Services-->
+  <!-- Allow the application to access Google web-based services. -->
+  <!-- Google Maps for Android v2 will cache map tiles on external storage -->
+  <!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
+  <!-- Permission to receive remote notifications from Google Play Services -->
+  <!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
+  <!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+  <!--<uses-permission android:name="android.permission.BATTERY_STATS" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />-->
+</manifest>

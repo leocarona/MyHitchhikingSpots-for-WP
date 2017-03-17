@@ -1,0 +1,58 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MailMessageDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="PageTitle" Text="MailMessage Tester" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="40" />
+        </StackPanel>
+
+        <Grid x:Name="gridFields" Grid.Row="1" Margin="0,0,0,61">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="21*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Height="38" HorizontalAlignment="Left" Margin="23,-30,0,0" Name="textBlock1" Text="Example of MailMessage class usage:" VerticalAlignment="Top" Width="445" TextWrapping="Wrap" FontSize="24" Grid.ColumnSpan="2" Foreground="#FF918E8E" />
+            <TextBox FontSize="24" Height="72" HorizontalAlignment="Right" IsEnabled="True" IsHitTestVisible="True" Margin="0,290,24,0" Name="textBoxMailTo" Width="311" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+            <TextBlock Margin="23,310,26,0" Text="To (email):" Height="37" VerticalAlignment="Top" />
+            <TextBox FontSize="24" Height="72" HorizontalAlignment="Right" IsEnabled="True" IsHitTestVisible="True" Margin="0,348,24,0" Name="textBoxSubject" Text="Hello from WP" Width="311" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+            <TextBlock Margin="23,365,26,0" Text="Subject:" Height="41" VerticalAlignment="Top" />
+            <TextBox FontSize="24" HorizontalAlignment="Right" IsEnabled="True" IsHitTestVisible="True" Margin="0,408,24,0" Name="textBoxBody" Width="311" Text="My App can send email with every kind of attachment now :)" TextWrapping="Wrap" Height="109" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+            <TextBlock Height="38" Margin="23,421,26,0" Text="Message:" VerticalAlignment="Top" />
+            <TextBox FontSize="24" Height="72" HorizontalAlignment="Right" IsEnabled="True" IsHitTestVisible="True" Margin="0,9,24,0" Name="textBoxUserName" Width="311" VerticalAlignment="Top" Background="#BFFFDBD8" Grid.ColumnSpan="2" />
+            <TextBlock HorizontalAlignment="Left" Margin="23,22,0,0" Text="UserName:" Width="129" TextWrapping="Wrap" Height="32" VerticalAlignment="Top" />
+            <PasswordBox FontSize="24" Height="72" HorizontalAlignment="Right" IsEnabled="True" IsHitTestVisible="True" Margin="0,69,24,0" Name="textBoxPassword" Width="311" VerticalAlignment="Top" Background="#BFFFDBD8" Grid.ColumnSpan="2" />
+            <TextBlock Margin="23,89,26,0" Text="Password:" Height="37" VerticalAlignment="Top" />
+            <TextBlock HorizontalAlignment="Left" Margin="23,138,0,0" Text="Attachments:" Width="116" Height="30" VerticalAlignment="Top" />
+            <Button Content="SEND" Height="89" HorizontalAlignment="Left" Margin="145,507,0,0" Name="buttonSend" VerticalAlignment="Top" Width="299" Click="buttonSend_Click" Grid.ColumnSpan="2" />
+            <ListBox Height="151" HorizontalAlignment="Right" Margin="0,139,36,0" Name="listBoxAttachments" VerticalAlignment="Top" Width="287" BorderThickness="1" Background="Silver" Foreground="Black" FontSize="24" Grid.ColumnSpan="2" />
+            <Button Content="add pic" Height="70" HorizontalAlignment="Left" Margin="0,222,0,0" Name="buttonAddAttachment" VerticalAlignment="Top" Width="152" Click="buttonAddAttachment_Click" />
+            <TextBlock HorizontalAlignment="Left" Margin="24,45,0,0" Text="Live/Gmail/custom" Width="128" TextWrapping="Wrap" Height="36" VerticalAlignment="Top" Foreground="#FFF5D50C" FontSize="14" />
+            <CheckBox x:Name="chkHTMLBody" Content="html" HorizontalAlignment="Left" Height="71" Margin="10,446,0,0" VerticalAlignment="Top" Width="142" Click="chkHTMLBody_Click"/>
+            <Button Content="busy?" Height="89" HorizontalAlignment="Left" Margin="10,507,0,0" x:Name="buttonBusy" VerticalAlignment="Top" Width="145" Click="buttonBusy_Click" />
+        </Grid>
+
+        <Rectangle Fill="Red" Height="21" HorizontalAlignment="Left"  Name="rectangleProgress" Stroke="Black" StrokeThickness="1" VerticalAlignment="Bottom" Width="0" Margin="24,0,0,34" Grid.Row="1" />
+        <TextBlock Height="26" HorizontalAlignment="Left"  Name="textBlockProgress" Text="0%" TextAlignment="Center" VerticalAlignment="Bottom" Width="421" Margin="22,0,0,4" Grid.Row="1" />
+
+
+    </Grid>
+
+
+</phone:PhoneApplicationPage>
